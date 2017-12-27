@@ -1,0 +1,488 @@
+.cont_box {
+    width: 1150px;
+    margin: 0 auto;
+}
+/**************购物车头部样式*************/
+.orders_status {
+    width: 1150px;
+    margin: 0 auto;
+    margin-top: 62px;
+    color: #4A4A4A;
+    margin-bottom: 50px;
+}
+.orders_status p {
+    font-size: 20px;
+    float: left;
+}
+.status_main {
+    float: right;
+}
+.status_main p {
+    width: 96px;
+    height: 0px;
+    overflow-y: hidden;
+    border-top: 2px solid #BEBDBB;
+}
+.status_main p.line_l {
+     margin-left: 25px;
+ }
+.status_main p.line_r {
+    margin-right: 38px;
+    border-top: 2px dashed #BEBDBB;
+}
+.status_main ul {
+    padding-top: 16px;
+}
+.status_main ul li {
+    float: left;
+    position: relative;
+}
+.status_main ul li em.on {
+    background-image: url(../img/order_status_ok.png);
+    color: #e74c3c;
+}
+.status_main ul li.m {
+    margin-left: 62px;
+}
+.status_main ul li em {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    margin-left: -9px;
+    background-image: url(../img/order_status_bad.png);
+    background-size: 100% 100%;
+}
+.status_main ul li.l {
+    margin-left: 52px;
+}
+
+/******************购物车内容样式*********************/
+.shop_priduct_title {
+    height: 42px;
+    background: #F8F8F8;
+    padding-left: 9px;
+}
+.shop_priduct_title p {
+    float: left;
+    display: inline;
+    color: white;
+    height: 25px;
+    width: auto;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.shop_priduct_title p span {
+    float: left;
+    width: 10px;
+    height: 25px;
+}
+.shop_priduct_title p span.left_bg {
+    background: url(../img/icon_bg.png) no-repeat;
+    background-size: auto 200px;
+    background-position: -135px 0px;
+}
+.shop_priduct_title p em {
+    float: left;
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 23px;
+    border-top: 1px solid #E74C3C;
+    border-bottom: 1px solid #E74C3C;
+    font-size: 16px;
+    line-height: 25px;
+    color: #E74C3C;
+}
+.shop_priduct_title p span.right_bg {
+    background: url(../img/icon_bg.png) no-repeat;
+    background-size: auto 200px;
+    background-position: -147px 0px;
+}
+.shop_priduct_title a {
+    float: right;
+    color: #E74C3C;
+    display: inline;
+    margin-right: 20px;
+    padding-right: 22px;
+    font-size: 14px;
+    height: 14px;
+    background-image: url(../img/icon_bg.png);
+    background-size: auto 200px;
+    background-position: -406px -52px;
+    margin-top: 15px;
+}
+.shop_product_list ul {
+    padding-left: 24px;
+    padding-top: 24px;
+    height: 107px;
+    border-bottom: 1px solid #ECECEC;
+}
+.shop_product_list ul li {
+    float: left;
+}
+.shop_product_list ul li.product_select {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    margin-top: 32px;
+    margin-right: 52px;
+}
+.shop_product_list ul li.product_select input {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    left: 0px;
+    top: 0px;
+}
+.shop_product_list ul li.product_select em.on {
+    background-image: url(../img/checkbox2.png);
+}
+.shop_product_list ul li.product_select em {
+    width: 100%;
+    display: block;
+    height: 100%;
+    background-image: url(../img/checkbox1.png);
+    background-size: 16px 16px;
+}
+.product_message {
+    width: 466px;
+}
+.product_message dt img {
+    width: 100%;
+    height: 100%;
+}
+.product_message dt {
+    width: 80px;
+    height: 82px;
+    margin-right: 54px;
+    float: left;
+}
+.product_message dd {
+    width: 236px;
+    padding-top: 12px;
+    float: left;
+}
+.product_message dd h4 {
+    margin-bottom: 7px;
+    font-weight: normal;
+    line-height: 19px;
+    font-size: 14px;
+    max-height: 38px;
+    overflow: hidden;
+    color: #4A4A4A;
+}
+.product_message dd p {
+    color: #828282;
+    font-size: 12px;
+    height: 16px;
+    overflow: hidden;
+}
+.product_message dd p span {
+    margin-right: 16px;
+}
+.product_message dd h3 {
+    font-size: 12px;
+    color: #828282;
+    font-weight: normal;
+    padding-left: 19px;
+    position: relative;
+    line-height: 16px;
+    margin-top: 8px;
+}
+.product_message dd h3 img {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 0px;
+    top: 1px;
+}
+.product_price {
+    margin-top: 31px;
+    color: #4A4A4A;
+    width: 150px;
+}
+.product_amount {
+    margin-top: 31px;
+    width: 88px;
+    margin-right: 124px;
+}
+
+/*****加减号的样式******/
+.product_amount span {
+    float: left;
+    font-size: 14px;
+    border: 1px solid #E6E6E6;
+    background: white;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    line-height: 17px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.product_amount input {
+    float: left;
+    border: none;
+    text-align: center;
+    width: 44px;
+    outline: none;
+    line-height: 19px;
+}
+.subtotal {
+    margin-top: 20px;
+    height: 40px;
+    line-height: 40px;
+    width: 139px;
+    border-right: 1px dashed #BEBDBB;
+}
+.product_del {
+    padding-left: 39px;
+    padding-top: 32px;
+}
+.product_del em {
+    display: block;
+    width: 18px;
+    height: 19px;
+    background-image: url(../img/delp.png);
+    background-size: 18px 19px;
+    cursor: pointer;
+}
+.bag_checkout_label {
+    height: 50px;
+    background: #F8F8F8;
+    margin-bottom: 70px;
+}
+.bag_checkout_label p {
+    display: inline;
+    margin-left: 20px;
+    float: left;
+    position: relative;
+    margin-top: 18px;
+    margin-right: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #828282;
+    height: 16px;
+    line-height: 16px;
+}
+.bag_checkout_label p input {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+.bag_checkout_label p em {
+    float: left;
+    width: 16px;
+    margin-right: 10px;
+    height: 16px;
+    background-image: url(../img/checkbox1.png);
+    background-size: 16px 16px;
+}
+.bag_checkout_label p em.on {
+    background-image: url(../img/checkbox2.png);
+}
+.bag_checkout_label dl {
+    float: right;
+}
+.bag_checkout_label dl dd, .bag_checkout_label dl dt {
+    float: left;
+}
+.bag_checkout_label dl dt p {
+    margin-right: 0;
+}
+.bag_checkout_label dl dt p span {
+    color: #E74C3C;
+    font-size: 18px;
+}
+.bag_checkout_label dl dd {
+    height: 50px;
+    margin-left: 40px;
+    width: 180px;
+    display: inline;
+}
+.bag_checkout_label dl dd a {
+    display: block;
+    width: 100%;
+    background: #E74C3C;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 18px;
+}
+
+/**********购物车为空时的样式**************/
+.shp_empty {
+    width: 240px;
+    margin: 0 auto;
+    margin-top: 177px;
+    margin-bottom: 212px;
+}
+.shp_empty dt {
+    margin: 0 auto;
+    width: 99px;
+    height: 103px;
+}
+.shp_empty dt img {
+    width: 100%;
+    height: 100%;
+}
+.shp_empty dd {
+    margin-top: 42px;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.shp_empty dd a {
+    color: #E74C3C;
+}
+
+/*******热门推荐样式********/
+.recommend_good {
+    width: 1150px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.recommend_good>h5 {
+    font-size: 20px;
+    color: #4A4A4A;
+    font-weight: normal;
+}
+.recommend_good div.goods_list {
+    margin-top: 40px;
+}
+.goods_list {
+    width: 2320px;
+    height: 360px;
+    margin-top: 40px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+.goods_list dl {
+    width: 222px;
+    height: 340px;
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.goods_list dl:nth-child(5n) {
+    margin-right: 0px;
+}
+.goods_list a {
+    display: block;
+}
+.goods_list dl dt {
+    width: 222px;
+    height: 222px;
+    position: relative;
+}
+.goods_list dl dt img {
+    width: 100%;
+    height: 100%;
+}
+.goods_list dl dd {
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-right: 16px;
+    height: 90px;
+}
+.goods_list dl dd p.goods_introduce {
+    line-height: 17px;
+    font-size: 14px;
+    height: 34px;
+    color: #4A4A4A;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+.goods_price {
+    height: 20px;
+    font-size: 12px;
+}
+/*左右箭头*/
+.left_btn, .right_btn {
+    position: absolute;
+    top: 130px;
+    width: 20px;
+    height: 89px;
+    display: none;
+    cursor: pointer;
+    background: #000000;
+    opacity: 0.3;
+}
+.left_btn {
+    left: 0px;
+    border-radius: 3px 0px 0px 3px;
+    background: #000000 url("../img/btn_left.png") 4px 34px no-repeat;
+    background-size: 12px 21px;
+}
+.right_btn {
+    right: 0px;
+    border-radius: 0px 3px 3px 0px;
+    background: #000000 url("../img/btn_right.png") 4px 34px no-repeat;
+    background-size: 12px 21px;
+}
+
+/***********已发货订单**************/
+.send{
+    width: 1000px;
+    margin: 50px auto;
+    border: 1px solid #666666;
+    text-indent: 20px;
+}
+.send h3{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: #4A4A4A;
+    font-weight: normal;
+}
+.goods {
+    border: 1px solid #666666;
+}
+.goods li{
+    float: left;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    padding: 20px;
+}
+.listtop{
+    width: 100%;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+}
+.send .listtop li{
+    float: left;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.send img{
+    width: 100%;
+    height: 100%;
+}
+.send span{
+    display: inline-block;
+    height: 20px;
+    line-height:20px;
+}
+
+
+

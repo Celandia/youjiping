@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/goodsinfo.css">
+</head>
+<body>
+<!--头部开始-->
+<div class="header_container">
+    <div class="header_main clear">
+        <!--logo-->
+        <div class="logo">
+            <a href="#" target="_blank"><img src="img/logo.png" alt=""></a>
+        </div>
+        <!--头部右边-->
+        <div class="functional">
+            <div class="search_box clear">
+                <p>
+                    <input type="text" id="search" placeholder="搜索">
+                    <span id="search_btn"><img src="img/search.png" alt=""></span>
+                </p>
+            </div>
+            <div class="use_functional clear">
+                <ul class="clear">
+                    <li class="download_app">
+                        <a href="#" title="下载APP"></a>
+                        <div><img src="img/app_code.png" alt=""><span></span></div>
+                    </li>
+                    <li class="shopping_bag">
+                        <a href='shoppingcar.html' target='_blank' title='购物袋'></a>
+                    </li>
+                    <li class="user_center">
+                        <!--<a href="login.html" title="个人中心"></a>-->
+                        <!--<a href="#" class="overlogin"></a>-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部菜单-->
+<div class="nav_bar_container">
+    <div class="nav_bar clear" id="nav_bar">
+        <ul class="clear">
+            <li class="brand">
+                <a class="no" href="index.html">首页</a>
+                <p></p>
+            </li>
+            <li class="brand">
+                <a href="#" target="_blank">新品</a>
+                <p></p>
+            </li>
+            <li>
+                <a href="#" target="_blank">美味餐厨</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">烹饪锅具</a></li>
+                    <li><a href="#" target="_blank">厨房工具</a></li>
+                    <li><a href="#" target="_blank">厨房电器</a></li>
+                    <li><a href="#" target="_blank">餐具桌面</a></li>
+                    <li><a href="#" target="_blank">水具酒具</a></li>
+                    <li><a href="#" target="_blank">咖啡茶具</a></li>
+                    <li><a href="#" target="_blank">烘焙烧烤</a></li>
+                    <li><a href="#" target="_blank">吃货专列</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#" target="_blank">家纺家饰</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">家纺</a></li>
+                    <li><a href="#" target="_blank">装饰</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#" target="_blank">生活日用</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">清洁</a></li>
+                    <li><a href="#" target="_blank">收纳</a></li>
+                    <li><a href="#" target="_blank">雨具</a></li>
+                    <li><a href="#" target="_blank">浴室</a></li>
+                    <li><a href="#" target="_blank">生活电器</a></li>
+                    <li><a href="#" target="_blank">颈枕口罩</a></li>
+                    <li><a href="#" target="_blank">宠物用品</a></li>
+                    <li><a href="#" target="_blank">保暖防护</a></li>
+                    <li><a href="#" target="_blank">旅游外出</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#" target="_blank">健康美体</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">口腔护理</a></li>
+                    <li><a href="#" target="_blank">面部护理</a></li>
+                    <li><a href="#" target="_blank">全身护理</a></li>
+                    <li><a href="#" target="_blank">头发护理</a></li>
+                    <li><a href="#" target="_blank">女性护理</a></li>
+                    <li><a href="#" target="_blank">纤体塑身</a></li>
+                    <li><a href="#" target="_blank">膳食补充</a></li>
+                    <li><a href="#" target="_blank">美容彩妆</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#" target="_blank">文具数码</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">笔记手帐</a></li>
+                    <li><a href="#" target="_blank">书写工具</a></li>
+                    <li><a href="#" target="_blank">办公收纳</a></li>
+                    <li><a href="#" target="_blank">贺卡包装</a></li>
+                    <li><a href="#" target="_blank">数码配件</a></li>
+                    <li><a href="#" target="_blank">耳机/音箱</a></li>
+                    <li><a href="#" target="_blank">摄影相关</a></li>
+                </ol>
+            </li>
+            <li class="brand">
+                <a href="#" target="_blank">品牌</a>
+                <p></p>
+            </li>
+        </ul>
+        <a href="#" class="contact">联系客服</a>
+
+        <div class="nav_bar_cont" id="nav_bar_cont"></div>
+        <p></p>
+        <!--<a href="#" class="scroll_shop" id="scroll_shop" target="_blank"></a>-->
+        <a href='shoppingcar.html' class='scroll_shop no' id='scroll_shop' target='_blank' title='购物袋'></a>
+    </div>
+</div>
+<!--头部结束-->
+
+<div class="bread">
+    <div class="bread_container">
+        <a href="index.html">首页</a>
+        <i>→</i>
+        <a href="#">商品详情</a>
+    </div>
+</div>
+
+<!--商品开始-->
+<!-------------------商品展示开始--------------------------->
+<div class="good clear">
+    <!--放大镜开始-->
+    <div class="goods_box">
+        <div class="goods_focus">
+            <!--商品图-->
+            <div class="show">
+                <div class="shadow"></div>
+            </div>
+            <!--放大图-->
+            <div class="big">
+                <img src="goodsimg/goods_list1.jpg" alt="" class="bigimg">
+            </div>
+            <!--小图列表-->
+            <div class="list">
+                <ul class="tb-thumb clear">
+                    <li id="small_li"></li>
+                    <li><img src="goodsimg/goods_list1_1.jpg" alt=""></li>
+                    <li><img src="goodsimg/goods_list1_2.jpg" alt=""></li>
+                    <li><img src="goodsimg/goods_list1_3.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--放大镜结束-->
+    <div class="good-right">
+        <h4 class="title" id="des"></h4>
+        <p class="slogan">靓丽色彩，独特的设计感，潮流品味随时体现！三色灯光，可显示剩余电量，随时掌握手机电量情况。别看它体积小巧，内心却很强大，给手机快速充电的同时保证安全性，全面兼容各种机型。</p>
+        <p class="good_brand">
+            <a href="#">商品品牌:<span>EMIE[香港]</span></a>
+        </p>
+        <div class="activty clear">
+            <div class="price_Ratio">
+                <p class="p_r"><span id="g_d_t">优选价</span>
+                    <b  id="goods_price" ></b>
+                </p>
+                <p><span class="market_value">参考价</span><span id="mprice">¥280.00</span><span class="price_suggest">(此价格为供应商建议零售价格)</span></p>
+            </div>
+            <div class="promotion">
+                <dl class="clear">
+                    <dt>促销</dt>
+                    <dd>
+                        <p class="p_one"><a href="#"  target="_blank">精选推荐</a></p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!-- 选择颜色开始-->
+        <dl class="color clear">
+            <dt>颜色：</dt>
+            <dd>
+                <ul>
+                    <li title="魔伏白"></li>
+                    <li title="魔伏黑"></li>
+                    <li title="魔伏红"></li>
+                </ul>
+            </dd>
+        </dl>
+        <!-- 选择颜色结束-->
+        <!-- 选择尺码开始-->
+        <dl class="size clear">
+            <dt>尺码：</dt>
+            <dd>
+                <ul>
+                    <li class="on" title="均码">均码</li>
+                </ul>
+            </dd>
+        </dl>
+        <!-- 选择尺码结束-->
+        <!-- 选择数量开始-->
+        <dl class="num clear">
+            <dt>数量：</dt>
+            <dd>
+                <ul>
+                    <li>
+                        <p class="wrap_input">
+                        <span class="reduce off" id="reduce">－</span>
+                        <input type="text" value="1" id="goodNum">
+                        <span class="add" id="add">+</span></p>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        <!-- 选择数量结束-->
+        <div class="g_prompt">
+            <span>提示：</span>
+            <ul class="clear">
+                <li><span></span>优集品自营</li>
+                <li><span></span>正品保障</li>
+                <li><span></span>满额包邮</li>
+            </ul>
+        </div>
+        <!-- 加入购物袋开始-->
+        <div class="collection">
+            <span class="col">收藏</span>
+            <span class="add_shopping_bar " id="add_shopping_bag" >
+                <img src="img/shopping-bag.png" alt="">加入购物袋
+            </span>
+        </div>
+        <!-- 加入购物袋结束-->
+    </div>
+</div>
+<!-------------------商品展示结束--------------------------->
+
+<!--------------------商品详细信息开始-------------------------->
+<div class="shop_details">
+    <!--详情-->
+    <div class="details_cont">
+        <div class="detail_menu">
+            <a href="#detail_message" class="on">商品详情</a>
+            <a href="#discuss">用户口碑</a>
+        </div>
+        <ul class="detail_message">
+            <li><span>材质</span><p>树脂、钢琴烤漆塑料外壳、高能锂离子电芯</p></li>
+            <li><span>尺寸</span><p>移动电源：直径4cm 高9cm 包装盒：长14.2cm 宽14.2cm 高5cm</p></li>
+            <li><span>重量</span><p>净重：130g 毛重：302g</p></li>
+            <li><span>其他</span><p>产品型号：EMIE-S100 输入：DC5V-1A 输出：DC5V-2.1A 电池容量：5200mAh 充电时间：约5小时 电芯：高能锂离子电芯 寿命：可循环充放＞500次 套餐内容：挂绳、USB充电线、使用说明书</p></li>
+        </ul>
+        <div class="detial_show">
+            <dl>
+                <dt>靓丽色彩，独特的设计感，潮流品味随时体现！三色灯光，可显示剩余电量，随时掌握手机电量情况。别看它体积小巧，内心却很强大，给手机快速充电的同时保证安全性，全面兼容各种机型。</dt>
+            </dl>
+            <dl>
+                <dd><img src="goodsimg/goods_list1_11.jpg"></dd>
+                <dt>Emie充电宝符合中国CCIC、MSDS、美国FCC、欧盟CE、欧盟ROHS、韩国KC、日本PSE、国际IEC CB等相关认证，大量出口多国，符合品质监控国际化。</dt>
+            </dl>
+            <div class="using_method">
+                <h3>注意事项</h3>
+                <ul>
+                    <li>价格说明↓</li>
+                    <li>优选价：优选价为商品的销售价，是您最终决定是否购买商品的依据。</li>
+                    <li>参考价：参考价格为供应商建议零售价格，该价格仅供您参考。</li>
+                    <li>促销价：如无特殊说明，促销价是销售商在参考价基础上给予的优惠价格。如有疑问，您可以在购买前与客服联系。</li>
+                    <li>价格异常：因可能存在系统缓存、页面更新延迟等不确定性情况，导致价格显示异常，商品具体售价请以订单结算页价格为准。如您发现异常情况出现，请立即联系我们补正，以便您能顺利购物。</li>
+                </ul>
+            </div>
+        </div>
+        <div class="de_comment">
+            <ul>
+                <li>
+                    <h6>1***3</h6>
+                    <p>很好真喜欢</p>
+                    <h5><span>客服回答：</span>您喜欢就是最好的啦！(❤´艸｀❤)~~要继续支持哦，小U会很开心的呢~~</h5>
+                </li>
+                <li>
+                    <h6>G***e</h6>
+                    <p>太可爱了</p>
+                    <h5><span>客服回答：</span>小U的东西都是棒棒的喲~~喜欢的话，就为我们点个大大的赞吧~~♪(＾∀＾●)ﾉ~~</h5>
+                </li>
+                <li>
+                    <h6>1***2</h6>
+                    <p>很好，正品</p>
+                    <h5><span>客服回答：</span>亲亲，可以放心，小U的商品都是正品保证哦，性价比高还很实用呢~~ ♪(＾∀＾●)ﾉ~~</h5>
+                </li>
+            </ul>
+            <p class="see_much" id="see_much">查看更多评论</p>
+        </div>
+    </div>
+
+    <!--推荐-->
+    <div class="similar">
+        <h4>热门推荐</h4>
+    </div>
+</div>
+<!--------------------商品详细信息结束-------------------------->
+<!--商品结束-->
+
+<!--固定图标开始-->
+<div class="Contact_service" id="Contact_service">
+    <img src="img/Contact_service.png" alt="">
+</div>
+<div class="backT" id="backT">
+    <img src="img/backT.png" alt="">
+</div>
+<!--固定图标结束-->
+<!--foot开始-->
+<div class="footer_container"></div>
+<!--foot结束-->
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/cy_head.js"></script>
+<script src="js/config.js"></script>
+<script src="js/linkfoot.js"></script>
+<script>
+    $(function () {
+        nav();
+        toptip();
+        //放大镜
+        $(".show").mousemove(function (e) {
+            $(".shadow").show();
+            $(".big").show();
+            $(".big img").attr("src",$(".show img").attr("src"));
+            var pagex=e.pageX;
+            var pagey=e.pageY;
+            var showLeft = $(this).offset().left;//show左边距
+            var showTop = $(this).offset().top;//show顶边距
+            var show_w = $(this).width();
+            var show_h = $(this).height();
+            var shadow_w = $(".shadow").width();
+            var shadow_h = $(".shadow").height();
+            var x = pagex-showLeft-(shadow_w/2);
+            var y = pagey-showTop-(shadow_h/2);
+            var maxX = show_w - shadow_w;
+            var maxY = show_h - shadow_h;
+            if(x<=0){
+                x = 0;
+            }
+            if(x>=maxX){
+                x = maxX;
+            }
+            if(y<=0){
+                y = 0;
+            }
+            if(y>=maxY){
+                y = maxY;
+            }
+            var bigImg_x = -($(".big img").width() * x/$(".show img").width());
+            var bigImg_y = -($(".big img").height() * y/$(".show img").height());
+
+            $(".big img").css("left",bigImg_x);
+            $(".big img").css("top",bigImg_y);
+            $(".shadow").css("left",x);
+            $(".shadow").css("top",y);
+        }).mouseout(function () {
+            $(".shadow").hide();
+            $(".big").hide();
+        });
+        //放大镜下的选项卡
+        $(".tb-thumb>li").mouseover(function () {
+            var src = $(this).children("img").attr("src");
+            $(this).css("border","1px solid red").siblings().css("border","1px solid #BEBEBE");
+            $(".show img").attr("src",src);
+            $(".big img").attr("src",src);
+        });
+        //获取商品id值并生成
+
+        var hrefgoods = window.location.search;//?id=6  ?username=17612772510&id=6
+        var goodsIDlist = hrefgoods.split("=");
+        var goodsID = goodsIDlist[goodsIDlist.length-1];
+//        var username = hrefgoods.split("&")[0].split("=")[1];
+//        var srcgoods = "";
+        //创建商品
+        goodscreat(goodsID);
+        function goodscreat(goodsID){
+//            var href = window.location.search;//?id=6  ?username=17612772510&id=6
+//            var goodsIDlist = href.split("=");
+//            var goodsID = goodsIDlist[goodsIDlist.length-1];
+            $.ajax({
+                type:"get",
+                url: "json/goods.json",
+                success: function (result) {
+                    for(var i=0;i<result.length;i++){
+                        var goods = result[i];
+                        var goodsid = goods.id;
+                        if(goodsID == goodsid){
+                            var goodsimg = "<img src='goodsimg/goods_list"+goodsid+".jpg' target='_blank'>";
+                            $(".show").prepend(goodsimg);
+                            $("#small_li").prepend(goodsimg);
+                            $(".color li").append(goodsimg);
+                            var brand = goods.brand;
+                            var intro = goods.introduce;
+                            $("#des").html("["+brand+"]"+" "+intro);
+                            var sprice = goods.sprice;
+                            var mprice = goods.mprice;
+                            $("#goods_price").html("¥"+sprice);
+                            $("#mprice").html("¥"+mprice)
+                        }
+                    }
+                }
+            })
+        }
+        //加入购物车
+        //判断是否为登录用户 //hrefgoods.indexOf("username") == -1
+        if(!username){//不是登录用户
+//            srcgoods = "";
+            $("#add_shopping_bag").click(function () {
+                window.location.href = "login.html"
+            })
+        }else{
+//            srcgoods = "username="+username+"&";
+            var timer = null;
+            $("#add_shopping_bag").click(function () {
+                $(this).html("<img src='img/shopping-bag.png'>已成功加入");
+                timer=setTimeout(function () {
+                    $("#add_shopping_bag").html("<img src='img/shopping-bag.png'>加入购物袋")
+                },1000);
+                var goodNum = $("#goodNum").val();
+                updategoodscar(username,goodsID,goodNum);
+            })
+        }
+        //增加数量
+        $("#add").click(function () {
+            var goodNum = $("#goodNum").val()*1;
+            goodNum++;
+            $("#goodNum").val(goodNum);
+        });
+        //建少数量
+        $("#reduce").click(function () {
+            var goodNum = $("#goodNum").val()*1;
+            goodNum--;
+            if(goodNum<=1){
+                goodNum = 1;
+            }
+            $("#goodNum").val(goodNum);
+        });
+        //数据库中数据更新
+        function updategoodscar(username,goodsid,goodsnum){
+            $.ajax({
+                type:"get",
+                url:conf.url + "addusergoods.php",
+                data:{username:username,goodsid:goodsid,goodsnum:goodsnum}
+            })
+        }
+
+
+        //推荐
+        var numid = Math.round(Math.random()*38);
+        for(var i=1;i<4;i++){
+            tuijian(i+numid);
+        }
+        function tuijian(numid){
+            $.ajax({
+                type: "get",
+                url: "json/goods.json",
+                success: function (result) {
+                    for(var i=0;i<result.length;i++){
+                        var goods = result[i];
+                        if(numid == goods.id){
+                            var str = `
+                                <dl>
+                                    <a href="goodsinfo.html?id=`+goods.id+`" target="_blank">
+                                        <dt>
+                                            <img class="lazy" src="goodsimg/goods_list`+goods.id+`.jpg" alt="">
+                                        </dt>
+                                        <dd>
+                                            <p class="goods_introduce">`+goods.introduce+`</p>
+                                            <p class="goods_price"><span class="special_price">¥`+goods.sprice+`</span></p>
+                                        </dd>
+                                    </a>
+                                </dl>`
+                            $(".similar").append(str);
+                        }
+                    }
+                }
+            });
+        }
+    })
+
+</script>
+</html>

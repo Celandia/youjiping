@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理者</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .goodslist{
+            width: 1000px;
+            margin: 0 auto;
+            background-color: #BEBDBB;
+            text-indent: 20px;
+        }
+        h3{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background-color: #666666;
+            color: #FFFFFF;
+        }
+        .goods li{
+            float: left;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            padding: 20px;
+            color: #FFFFFF;
+        }
+        .listtop{
+            width: 100%;
+            border-bottom: 2px solid #666666;
+        }
+        .goodslist .listtop li{
+            float: left;
+            width: 100px;
+            height: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+        .goodslist img{
+            width: 100%;
+            height: 100%;
+        }
+        .goodslist span{
+            display: inline-block;
+            height: 20px;
+            line-height:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="goodslist">
+        <h3>商家发货</h3>
+        <ul class="listtop clear">
+            <li><span>用户</span></li>
+            <li><span>商品</span></li>
+            <li><span>商品描述</span></li>
+            <li><span>数量</span></li>
+            <li><span>单价</span></li>
+            <li><span>总计</span></li>
+            <li><span>发货</span></li>
+        </ul>
+        <!--<ul class="goods clear">-->
+            <!--<li><span>17612772510</span></li>-->
+            <!--<li><img src="goodsimg/goods_list12.jpg" alt=""></li>-->
+            <!--<li><span>面膜</span></li>-->
+            <!--<li><span>10</span></li>-->
+            <!--<li><span>￥60.00</span></li>-->
+            <!--<li><span>￥600.00</span></li>-->
+            <!--<li><button id="send">发货</button></li>-->
+        <!--</ul>-->
+    </div>
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/config.js"></script>
+<script>
+    $(function () {
+        //从buygoods中获取username goodsid goodsnum
+        //从json中获得商品具体信息
+        //自动生成列表
+        //发货的点击事件，点击一次后不能再点击，并从buygoods中删除数据，将数据存入issend数据库里
+        var goods = {};
+
+        buygoods();
+
+        //从buygoods中获取username goodsid goodsnum
+        function buygoods(){
+            $.ajax({
+                type: "get",
+                url: conf.url + "admin.php",
+                success: function (result) {
+                    var list = JSON.parse(result);
+                    //[{"id":"1","username":"17612772510","goodsid":"12","goodsnum":"4"},{"id":"2","username":"17612772510","goodsid":"11","goodsnum":"2"}]
+                    for(var i=0;i<list.length;i++){
+                        var obj = list[i];//{id: "1", username: "17612772510", goodsid: "12", goodsnum: "4"}
+                        getgoodsinfo(obj.username,obj.goodsid,obj.goodsnum);
+                    }
+                }
+            })
+        }
+
+        //从json中获得商品具体信息
+        function getgoodsinfo(username,goodsid,goodsnum){
+            $.ajax({
+                type: "get",
+                url: "json/goods.json",
+                success: function (result) {
+                    for(var i=0;i<result.length;i++){
+                        var goodsinfo = result[i];
+                        if(goodsid == goodsinfo.id){
+                            goods.id = goodsid;
+                            goods.num = goodsnum;
+                            goods.intro = goodsinfo.brand;
+                            goods.sprice = goodsinfo.sprice;
+                            goods.user = username;
+                            createlist(goods);
+                        }
+                    }
+                }
+            })
+        }
+
+        //自动生成列表
+        function createlist(goods){//goods ={user:"123344",id:"12",num:"3",intro:"lalalala",sprice:"18.00"}
+            var totle = goods.num*goods.sprice;
+            var str=`
+            <ul  class="goods clear">
+              <li><span>`+goods.user+`</span></li>
+            <li><img src="goodsimg/goods_list`+goods.id+`.jpg" alt=""></li>
+            <li><span>`+goods.intro+`</span></li>
+            <li><span>`+goods.num+`</span></li>
+            <li><span>￥`+goods.sprice+`</span></li>
+            <li><span>￥`+totle+`</span></li>
+            <li><button id="send`+goods.id+`">发货</button></li>
+            </ul>`
+            $(".goodslist").append(str);
+            send(goods.user,goods.id,goods.num);
+        }
+
+        //发货的点击事件，点击一次后不能再点击
+        function send(username,id,num){
+            var btn = "#send"+id;
+            $("body").on("click",btn, function () {
+                if(!$(this).hasClass("send")){
+                    $(this).html("已发货");
+                    $(this).addClass("send");
+                    $(this).parent().siblings().css("color","#cdcdcd");
+                    regoods(username,id);
+                    savesend(username,id,num);
+                }
+            })
+        }
+
+        //从buygoods中删除数据
+        function regoods(username,goodsid){
+            $.ajax({
+                type:"get",
+                url:conf.url + "deltbuygds.php",
+                data:{username:username,goodsid:goodsid}
+            })
+        }
+
+        //将数据存入issend数据库里
+        function savesend(username,goodsid,goodsnum){
+            $.ajax({
+                type:"get",
+                url:conf.url + "addsend.php",
+                data:{username:username,goodsid:goodsid,goodsnum:goodsnum}
+            })
+        }
+    })
+</script>
+</html>

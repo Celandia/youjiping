@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/goodslist.css">
+</head>
+<body>
+<!--头部开始-->
+<div class="header_container">
+    <div class="header_main clear">
+        <!--logo-->
+        <div class="logo">
+            <a href="#" target="_blank"><img src="img/logo.png" alt=""></a>
+        </div>
+        <!--头部右边-->
+        <div class="functional">
+            <div class="search_box clear">
+                <p>
+                    <input type="text" id="search" placeholder="搜索">
+                    <span id="search_btn"><img src="img/search.png" alt=""></span>
+                </p>
+            </div>
+            <div class="use_functional clear">
+                <ul class="clear">
+                    <li class="download_app">
+                        <a href="#" title="下载APP"></a>
+                        <div><img src="img/app_code.png" alt=""><span></span></div>
+                    </li>
+                    <li class="shopping_bag">
+                        <a href='shoppingcar.html' target='_blank' title='购物袋'></a>
+                    </li>
+                    <li class="user_center">
+                        <!--<a href="login.html" title="个人中心"></a>-->
+                        <!--<a href="#" class="overlogin"></a>-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部菜单-->
+<div class="nav_bar_container">
+    <div class="nav_bar clear" id="nav_bar">
+        <ul class="clear">
+            <li class="brand">
+                <a class="no" href="index.html">首页</a>
+                <p></p>
+            </li>
+            <li class="brand">
+                <a href="#" target="_blank">新品</a>
+                <p></p>
+            </li>
+            <li>
+                <a href="#" target="_blank">美味餐厨</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">烹饪锅具</a></li>
+                    <li><a href="#" target="_blank">厨房工具</a></li>
+                    <li><a href="#" target="_blank">厨房电器</a></li>
+                    <li><a href="#" target="_blank">餐具桌面</a></li>
+                    <li><a href="#" target="_blank">水具酒具</a></li>
+                    <li><a href="#" target="_blank">咖啡茶具</a></li>
+                    <li><a href="#" target="_blank">烘焙烧烤</a></li>
+                    <li><a href="#" target="_blank">吃货专列</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#" target="_blank">家纺家饰</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">家纺</a></li>
+                    <li><a href="#" target="_blank">装饰</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#" target="_blank">生活日用</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">清洁</a></li>
+                    <li><a href="#" target="_blank">收纳</a></li>
+                    <li><a href="#" target="_blank">雨具</a></li>
+                    <li><a href="#" target="_blank">浴室</a></li>
+                    <li><a href="#" target="_blank">生活电器</a></li>
+                    <li><a href="#" target="_blank">颈枕口罩</a></li>
+                    <li><a href="#" target="_blank">宠物用品</a></li>
+                    <li><a href="#" target="_blank">保暖防护</a></li>
+                    <li><a href="#" target="_blank">旅游外出</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#" target="_blank">健康美体</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">口腔护理</a></li>
+                    <li><a href="#" target="_blank">面部护理</a></li>
+                    <li><a href="#" target="_blank">全身护理</a></li>
+                    <li><a href="#" target="_blank">头发护理</a></li>
+                    <li><a href="#" target="_blank">女性护理</a></li>
+                    <li><a href="#" target="_blank">纤体塑身</a></li>
+                    <li><a href="#" target="_blank">膳食补充</a></li>
+                    <li><a href="#" target="_blank">美容彩妆</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#" target="_blank">文具数码</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">笔记手帐</a></li>
+                    <li><a href="#" target="_blank">书写工具</a></li>
+                    <li><a href="#" target="_blank">办公收纳</a></li>
+                    <li><a href="#" target="_blank">贺卡包装</a></li>
+                    <li><a href="#" target="_blank">数码配件</a></li>
+                    <li><a href="#" target="_blank">耳机/音箱</a></li>
+                    <li><a href="#" target="_blank">摄影相关</a></li>
+                </ol>
+            </li>
+            <li class="brand">
+                <a href="#" target="_blank">品牌</a>
+                <p></p>
+            </li>
+        </ul>
+        <a href="#" class="contact">联系客服</a>
+
+        <div class="nav_bar_cont" id="nav_bar_cont"></div>
+        <p></p>
+        <!--<a href="#" class="scroll_shop" id="scroll_shop" target="_blank"></a>-->
+        <a href='shoppingcar.html' class='scroll_shop no' id='scroll_shop' target='_blank' title='购物袋'></a>
+    </div>
+</div>
+<!--头部结束-->
+
+<div class="bread">
+    <div class="bread_container">
+        <a href="index.html">首页</a>
+        <i>→</i>
+        <a href="#">商品列表</a>
+    </div>
+</div>
+
+<div class="order_div">
+    <p class="order">按价格排序</p>
+    <ul class="filter clear">
+        <li>分类：</li>
+        <li>茶</li>
+        <li>充电宝</li>
+        <li>锅</li>
+    </ul>
+</div>
+
+<!--商品列表开始-->
+<div class="goods_list clear pagination">
+
+</div>
+<!--商品列表结束->
+
+<!--foot开始-->
+<div class="footer_container">
+    <div class="footer_main">
+        <ul class="footer_help">
+            <li><a href="#" class="about_ujp">关于优集品</a></li>
+            <li><a href="#" class="shopping_guide">购物指南</a></li>
+            <li><a href="#" class="notification">消费者告知书</a></li>
+            <li><a href="#" class="common_problem">常见问题</a></li>
+        </ul>
+        <div class="website_information">
+            <p>
+                <span class="first">客服电话 4000-788-738</span>
+                <span>优集品© 2011-2016</span>
+                <span>北京优集品网络科技有限公司</span>
+                <span>京ICP备11028595号 </span>
+                <span class="last">京公网安备110105011117</span>
+            </p>
+            <p style="margin-top: 10px;">
+                <span class="first">公司地址：北京市朝阳区华腾世纪总部公园E2座6层601B</span>
+                <span>统一社会信用代码：91110105576857306R </span>
+                <span class="last">食品经营许可证编码：</span>
+            </p>
+            <dl class="clear">
+                <dt>关注优集品</dt>
+                <dd class="weichat">
+                    <div id="weichat_div"><img src="img/wechat_code.png" alt=""><span></span></div>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<!--foot结束-->
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/cy_head.js"></script>
+<script src="js/config.js"></script>
+<script type="text/javascript" src="js/pagination.js"></script>
+<script>
+    $(function () {
+        //head的效果
+        nav();
+
+        //分页
+        fenye();
+
+        //点击关键词筛选
+        $(".filter li").click(function () {
+            var key = $(this).html();
+            fenye(key);
+        });
+
+        //筛选
+        function filter(key, result) {
+            var list = [];
+            for (var i = 0; i < result.length; i++) {
+                if (result[i].brand.indexOf(key) != -1 || result[i].introduce.indexOf(key) != -1) {
+                    list.push(result[i]);
+                }
+            }
+            return list;
+        }
+
+        //点击排序
+        $(".order").click(function () {
+            var order = 1;
+            fenye(order);
+        });
+
+        //排序
+        function getorder(result) {
+            var list = result;
+            for (var n = 0; n < list.length; n++) {
+                for (var j = n + 1; j < list.length; j++) {
+                    if (list[n].sprice * 1 > list[j].sprice * 1) {
+                        var temp = list[j];
+                        list[j] = list[n];
+                        list[n] = temp;
+                    }
+                }
+            }
+            return list;
+        }
+
+        //获取商品信息动态生成列表
+        function creatgoods(index, order) {
+            $.ajax({
+                type: "get",
+                url: "json/goods.json",
+                success: function (result) {
+                    if (order) {
+                        if (typeof order == "number") {
+                            var list = getorder(result);
+                            xunhuan(index, list);
+                        } else if(typeof order == "string") {
+                            var fillist = filter(order, result);
+                            xunhuan(index, fillist);
+                        }
+                    } else {
+                        xunhuan(index, result);
+                    }
+                }
+            });
+        }
+
+        //动态生成标签
+        function creategoods(item) {
+            var str = `<dl class="result">
+             <div class="mengcen" id="` + item.id + `"></div>
+                 <dt>
+                 <a ><img class="lazy" src="goodsimg/goods_list` + item.id + `.jpg"></a>
+                 </dt>
+             <dd>
+                 <p class="goods_brand"><a href="#">` + item.brand + `</a></p>
+                 <p class="goods_introduce"><a href="#">` + item.introduce + `</a></p>
+                 <p class="goods_price"><span class="special_price">¥` + item.sprice + `</span><span class="market_price">¥` + item.mprice + `</span></p>
+             </dd>
+         </dl>`
+            return str;
+        }
+
+        //分页插件回调函数
+        function xunhuan(index, result) {
+            for (var i = index * 10; i < (index + 1) * 10; i++) {
+                if(i<result.length){
+                    var goods = result[i];
+                    $(creategoods(goods)).appendTo($(".goods_list"));
+                }
+            }
+        }
+
+        //点击商品，进入详情页面
+//        var username = window.location.search.split("=")[1];//判断是否为登录用户
+//        if (username) {
+//            $('body').on('click', '.mengcen', function () {
+//                var goodsid = $(this).attr("id");
+//                window.location.href = "goodsinfo.html?username=" + username + "&id=" + goodsid;
+//            });
+//        } else {
+            $('body').on('click', '.mengcen', function () {
+                var goodsid = $(this).attr("id");
+                window.location.href = "goodsinfo.html?id=" + goodsid;
+            });
+//        }
+
+        //分页插件
+        function fenye(order) {
+            $(".pagination").pagination(40, {
+                num_edge_entries: 4,
+                num_display_entries: 0,
+                prev_text: "上一页",
+                next_text: "下一页",
+                callback: function (index) {
+                    $(".goods_list").prepend("<span class='blank'></span>");
+                    $(".goods_list").append("<p></p>");
+                    if (order) {
+                        creatgoods(index, order);
+                    } else {
+                        creatgoods(index);
+                    }
+                },
+                items_per_page: 10
+            });
+        }
+
+    })
+
+
+</script>
+</html>

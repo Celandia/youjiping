@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/shoppingcar.css">
+</head>
+<body>
+<!--头部开始-->
+<div class="header_container">
+    <div class="header_main clear">
+        <!--logo-->
+        <div class="logo">
+            <a href="#" target="_blank"><img src="img/logo.png" alt=""></a>
+        </div>
+        <!--头部右边-->
+        <div class="functional">
+            <div class="search_box clear">
+                <p>
+                    <input type="text" id="search" placeholder="搜索">
+                    <span id="search_btn"><img src="img/search.png" alt=""></span>
+                </p>
+            </div>
+            <div class="use_functional clear">
+                <ul class="clear">
+                    <li class="download_app">
+                        <a href="#" title="下载APP"></a>
+                        <div><img src="img/app_code.png" alt=""><span></span></div>
+                    </li>
+                    <li class="shopping_bag">
+                        <a href='shoppingcar.html' target='_blank' title='购物袋'></a>
+                    </li>
+                    <li class="user_center">
+                        <!--<a href="login.html" title="个人中心"></a>-->
+                        <!--<a href="#" class="overlogin"></a>-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部菜单-->
+<div class="nav_bar_container">
+    <div class="nav_bar clear" id="nav_bar">
+        <ul class="clear">
+            <li class="brand">
+                <a class="no" href="index.html">首页</a>
+                <p></p>
+            </li>
+            <li class="brand">
+                <a href="#" target="_blank">新品</a>
+                <p></p>
+            </li>
+            <li>
+                <a href="#" target="_blank">美味餐厨</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">烹饪锅具</a></li>
+                    <li><a href="#" target="_blank">厨房工具</a></li>
+                    <li><a href="#" target="_blank">厨房电器</a></li>
+                    <li><a href="#" target="_blank">餐具桌面</a></li>
+                    <li><a href="#" target="_blank">水具酒具</a></li>
+                    <li><a href="#" target="_blank">咖啡茶具</a></li>
+                    <li><a href="#" target="_blank">烘焙烧烤</a></li>
+                    <li><a href="#" target="_blank">吃货专列</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#" target="_blank">家纺家饰</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">家纺</a></li>
+                    <li><a href="#" target="_blank">装饰</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#" target="_blank">生活日用</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">清洁</a></li>
+                    <li><a href="#" target="_blank">收纳</a></li>
+                    <li><a href="#" target="_blank">雨具</a></li>
+                    <li><a href="#" target="_blank">浴室</a></li>
+                    <li><a href="#" target="_blank">生活电器</a></li>
+                    <li><a href="#" target="_blank">颈枕口罩</a></li>
+                    <li><a href="#" target="_blank">宠物用品</a></li>
+                    <li><a href="#" target="_blank">保暖防护</a></li>
+                    <li><a href="#" target="_blank">旅游外出</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#" target="_blank">健康美体</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">口腔护理</a></li>
+                    <li><a href="#" target="_blank">面部护理</a></li>
+                    <li><a href="#" target="_blank">全身护理</a></li>
+                    <li><a href="#" target="_blank">头发护理</a></li>
+                    <li><a href="#" target="_blank">女性护理</a></li>
+                    <li><a href="#" target="_blank">纤体塑身</a></li>
+                    <li><a href="#" target="_blank">膳食补充</a></li>
+                    <li><a href="#" target="_blank">美容彩妆</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#" target="_blank">文具数码</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">笔记手帐</a></li>
+                    <li><a href="#" target="_blank">书写工具</a></li>
+                    <li><a href="#" target="_blank">办公收纳</a></li>
+                    <li><a href="#" target="_blank">贺卡包装</a></li>
+                    <li><a href="#" target="_blank">数码配件</a></li>
+                    <li><a href="#" target="_blank">耳机/音箱</a></li>
+                    <li><a href="#" target="_blank">摄影相关</a></li>
+                </ol>
+            </li>
+            <li class="brand">
+                <a href="#" target="_blank">品牌</a>
+                <p></p>
+            </li>
+        </ul>
+        <a href="#" class="contact">联系客服</a>
+
+        <div class="nav_bar_cont" id="nav_bar_cont"></div>
+        <p></p>
+        <!--<a href="#" class="scroll_shop" id="scroll_shop" target="_blank"></a>-->
+        <a href='shoppingcar.html' class='scroll_shop no' id='scroll_shop' target='_blank' title='购物袋'></a>
+    </div>
+</div>
+<!--头部结束-->
+
+<!--购物车开始-->
+<div class="cont_box">
+    <!--购物车头部-->
+    <div class="orders_status clear">
+        <p>购物车</p>
+        <div class="status_main clear">
+
+        </div>
+    </div>
+
+    <!--空购物车-->
+    <!--<dl class="shp_empty">-->
+        <!--<dt><img src="img/shopping_bag-noth.png" alt=""></dt>-->
+        <!--<dd>您的购物车里暂无商品，<a href="/">赶紧逛逛→</a></dd>-->
+    <!--</dl>-->
+
+    <!--购物车内容-->
+    <div class="shop_bag_main">
+        <div class="shop_item">
+            <div class="shop_priduct_title clear">
+                <p><span class="left_bg"></span><em>限时优惠</em><span class="right_bg"></span></p>
+                <a href="#" target="_blank">去凑单</a>
+            </div>
+            <!--<div class="shop_product_list ">-->
+                <!--<ul class="clear">-->
+                    <!--<li class="product_select">-->
+                        <!--<input class="check" type="checkbox"/>-->
+                        <!--<em class='on'></em>-->
+                    <!--</li>-->
+                    <!--<li class="product_message">-->
+                        <!--<dl class="clear">-->
+                            <!--<dt>-->
+                                <!--<img src="goodsimg/goods_list3.jpg" alt="">-->
+                            <!--</dt>-->
+                            <!--<dd>-->
+                                <!--<h4>好东西</h4>-->
+                                <!--<p>-->
+                                    <!--<span>颜色：红色</span>-->
+                                    <!--<span>尺码：均码</span>-->
+                                <!--</p>-->
+                                <!--<h3><img src="img/sf.png" alt="">品牌商发货</h3>-->
+                            <!--</dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li class="product_price">-->
+                        <!--¥<span class="p_price"></span>-->
+                    <!--</li>-->
+                    <!--<li class="product_amount">-->
+                        <!--<div>-->
+                            <!--<span class="reduce">-</span>-->
+                            <!--<input type="text" class="g_quantity" value="">-->
+                            <!--<span class="add">+</span>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li class="subtotal">-->
+                        <!--¥<span class="submoney"></span>-->
+                    <!--</li>-->
+                    <!--<li class="product_del">-->
+                        <!--<em class="del"></em>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <div class="bag_checkout_label clear">
+        <p><em class="checkall"></em>全选</p>
+        <dl class="clear">
+            <dt>
+            <p>总计：<span id="totle_span"></span></p></dt>
+            <dd><a id="pay">去结算</a></dd>
+        </dl>
+    </div>
+</div>
+<!--购物车结束-->
+
+<!---->
+<div class="send">
+    <h3>订单状态</h3>
+    <ul class="listtop clear">
+        <li><span></span></li>
+        <li><span>商品</span></li>
+        <li><span>商品描述</span></li>
+        <li><span>数量</span></li>
+        <li><span>单价</span></li>
+        <li><span>总计</span></li>
+        <li><span>状态</span></li>
+    </ul>
+    <!--<ul class="goods clear">-->
+    <!--<li><span>17612772510</span></li>-->
+    <!--<li><img src="goodsimg/goods_list12.jpg" alt=""></li>-->
+    <!--<li><span>面膜</span></li>-->
+    <!--<li><span>10</span></li>-->
+    <!--<li><span>￥60.00</span></li>-->
+    <!--<li><span>￥600.00</span></li>-->
+    <!--<li><button id="send">发货</button></li>-->
+    <!--</ul>-->
+</div>
+<!---->
+
+<!--热门推荐开始-->
+<div class="recommend_good">
+    <h5>热门推荐</h5>
+    <div class="goods_list clear"></div>
+    <div class="left_btn" id="pre"></div>
+    <div class="right_btn" id="next"></div>
+</div>
+<!--热门推荐结束-->
+<!--foot开始-->
+<div class="footer_container"></div>
+<!--foot结束-->
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/cy_head.js"></script>
+<script src="js/linkfoot.js"></script>
+<script src="js/config.js"></script>
+<script>
+    $(function () {
+        //head的效果
+        nav();
+
+        //生成购物车
+//        var username = window.location.search.split("=")[1];
+        var goods = {};
+        var sendgds = {};
+//        var goods ={id:"12",num:"3",intro:"lalalala",sprice:"18.00"}
+
+        //判断是否是登陆用户
+        if(username){
+            car(username);
+            getsendgoods(username);
+            getgoods(username);
+            $(".pay").attr("href","pay.html");
+        }else{
+            havegoods();
+        }
+        //判断是否为登录用户
+        function havegoods(username){
+            var str;
+            if(username){
+               str= `
+               <div class="orders_status clear">
+                    <p>购物车</p>
+                </div>
+               <dl class="shp_empty">
+                   <dt><img src="img/shopping_bag-noth.png" alt=""></dt>
+                   <dd>您的购物车里暂无商品，<a href="index.html?username=`+ username+`">赶紧逛逛→</a></dd>
+               </dl>`
+            }else{
+                str= `
+                <div class="orders_status clear">
+                    <p>购物车</p>
+                </div>
+               <dl class="shp_empty">
+                   <dt><img src="img/shopping_bag-noth.png" alt=""></dt>
+                   <dd>您的购物车里暂无商品，<a href="index.html">赶紧逛逛→</a></dd>
+               </dl>`
+            }
+            $(".cont_box").empty().append(str);
+        }
+        //获取登录用户购物车中商品id
+        function car(username){
+            $.ajax({
+                type: "get",
+                url: conf.url + "usergoods.php",
+                data:{username:username},
+                success: function (result) {
+                    var list = JSON.parse(result);
+                    //[{"id":"1","username":"17612772510","goodsid":"12","goodsnum":"4"},{"id":"2","username":"17612772510","goodsid":"11","goodsnum":"2"}]
+                    if(list.length == 0){
+                        havegoods(username);
+                    };
+                    for(var i=0;i<list.length;i++){
+                        var obj = list[i];//{id: "1", username: "17612772510", goodsid: "12", goodsnum: "4"}
+                        if (obj) {
+                            getgoodsinfo(obj.goodsid,obj.goodsnum);
+                        } else {
+                            havegoods(username);
+                        }
+                    }
+                }
+            })
+        }
+
+
+        //根据对应的商品id获取商品信息
+        function getgoodsinfo(goodsid,goodsnum){
+            $.ajax({
+                type: "get",
+                url: "json/goods.json",
+                success: function (result) {
+                    for(var i=0;i<result.length;i++){
+                        var goodsinfo = result[i];
+                        if(goodsid == goodsinfo.id){
+                            goods.id = goodsid;
+                            goods.num = goodsnum;
+                            goods.intro = goodsinfo.introduce;
+                            goods.sprice = goodsinfo.sprice;
+                            createcar(goods);
+                        }
+                    }
+                }
+            })
+        }
+        //创造购物车
+        function createcar(obj){
+            var submoney = obj.num * obj.sprice;
+            var str = `
+            <div class="shop_product_list product`+obj.id+`">
+                <ul class="clear">
+                    <li class="product_select">
+                        <em class='check on check`+obj.id+`' id=`+obj.id+`></em>
+                    </li>
+                    <li class="product_message">
+                        <dl class="clear">
+                            <dt>
+                                <img src="goodsimg/goods_list`+obj.id+`.jpg" alt="">
+                            </dt>
+                            <dd>
+                                <h4>`+obj.intro+`</h4>
+                                <p>
+                                    <span>颜色：红色</span>
+                                    <span>尺码：均码</span>
+                                </p>
+                                <h3><img src="img/sf.png" alt="">品牌商发货</h3>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="product_price">
+                        ¥<span class="p_price">`+obj.sprice+`</span>
+                    </li>
+                    <li class="product_amount">
+                        <div>
+                            <span class="reduce`+obj.id+`">-</span>
+                            <input type="text" class="g_quantity`+obj.id+`" value="`+obj.num+`">
+                            <span class="add`+obj.id+`">+</span>
+                        </div>
+                    </li>
+                    <li class="subtotal">
+                        ¥<span class="sub_span sub submoney`+obj.id+`">`+submoney+`</span>
+                    </li>
+                    <li class="product_del">
+                        <em class="del`+obj.id+`"></em>
+                    </li>
+                </ul>
+            </div>`;
+            $(".shop_item").append(str);
+            gettotle();
+            add(obj.id,obj.sprice);
+            reduce(obj.id,obj.sprice);
+            deletes(obj.id);
+            checkgoods(obj.id);
+            fancheckall();
+            changenum(obj.id);
+        }
+        //加号
+        function add(id,sprice){
+            var add = ".add"+id;
+            var inputclass=".g_quantity"+id;
+            var submoney = ".submoney"+id;
+            $("body").on("click",add,function(){
+                var inputval= $(inputclass).val();
+                inputval = inputval*1 + 1;
+                $(inputclass).val(inputval);
+                var sub = inputval * sprice;
+                $(submoney).html(sub);
+                gettotle();
+                regoodsnum(username,id,inputval);
+            });
+        }
+        //减号
+        function reduce(id,sprice){
+            var reduce = ".reduce"+id;
+            var inputclass=".g_quantity"+id;
+            var submoney = ".submoney"+id;
+            $("body").on("click",reduce,function(){
+                var inputval= $(inputclass).val();
+                inputval = inputval*1 - 1;
+                if(inputval <= 0){
+                    inputval = 0;
+                }
+                $(inputclass).val(inputval);
+                var sub = inputval * sprice;
+                $(submoney).html(sub);
+                gettotle();
+                regoodsnum(username,id,inputval);
+            });
+        }
+        //更改input中商品数量
+        function changenum(id){
+            var inputclass=".g_quantity"+id;
+            $("body").on("change",inputclass, function () {
+                var inputval= $(inputclass).val();
+                regoodsnum(username,id,inputval);
+            })
+        }
+        //结算统计
+        function gettotle(){
+            var sublist = $(".sub");
+            var totle = 0;
+            for(var i=0;i<sublist.length;i++){
+                var value = $(sublist[i]).html();
+                totle =totle+ value*1;
+            }
+            $("#totle_span").html("¥"+totle);
+        }
+        //删除商品
+        function deletes(id){
+            var emclass = ".del"+id;
+            var product = ".product"+id;
+            $("body").on("click",emclass,function(){
+                $(product).remove();
+                gettotle();
+                regoods(username,id);
+            });
+        }
+        //选择商品
+        function checkgoods(id){
+            var checkgoods = ".check"+id;
+            var submoney = ".submoney"+id;
+            $("body").on("click",checkgoods,function(){
+                if($(checkgoods).hasClass("on")){
+                    $(checkgoods).removeClass("on");
+                    $(submoney).removeClass("sub");
+                    gettotle();
+                    fancheckall();
+                }else{
+                    $(checkgoods).addClass("on");
+                    $(submoney).addClass("sub");
+                    gettotle();
+                    fancheckall();
+                }
+            })
+        }
+        //商品全选
+        checkallgoods();
+        function checkallgoods(){
+            $(".checkall").click(function () {
+                if($(".checkall").hasClass("on")){
+                    $(".checkall").removeClass("on");
+                    $(".check").removeClass("on");
+                    $(".sub_span").removeClass("sub");
+                    gettotle();
+                }else{
+                    $(".checkall").addClass("on");
+                    $(".check").addClass("on");
+                    $(".sub_span").addClass("sub");
+                    gettotle();
+                }
+            })
+        }
+        //商品反全选
+        function fancheckall(){
+            var checklist = $(".check");
+            var flag = false;
+            for(var i=0;i<checklist.length;i++){
+                var check = checklist[i];
+                if($(check).hasClass("on")){
+                    flag = true;
+                }else{
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag){
+                $(".checkall").addClass("on");
+            }else {
+                $(".checkall").removeClass("on");
+            }
+        }
+        //数据库中删除数据
+        function regoods(username,goodsid){
+            $.ajax({
+                type:"get",
+                url:conf.url + "delgoods.php",
+                data:{username:username,goodsid:goodsid}
+            })
+        }
+        //更新商品数量
+        function regoodsnum(username,goodsid,goodsnum){
+            $.ajax({
+                type:"get",
+                url:conf.url + "updategoods.php",
+                data:{username:username,goodsid:goodsid,goodsnum:goodsnum}
+            })
+        }
+        //点击结算
+        $("#pay").click(function () {      //点击结算是取出被选中的商品的id并放入idlist的集合里
+            var onem = $(".product_select em.on");
+            var idlist = [];
+            for(var i=0;i<onem.length;i++){
+                var id = $(onem[i]).attr("id");
+                idlist.push(id);
+            }
+            var good = getinfor(idlist);
+            savedata(good,username);
+            $(this).attr("href","pay.html")
+        });
+        //根据将数据存入准备购买商品数据库中 //good=[{id=1,num=2},{id=1,num=2}]
+        function savedata(good,username){
+            for(var i=0;i<good.length;i++){
+                var gdinfor = good[i];
+                var goodsid = gdinfor.id;
+                var goodsnum = gdinfor.num;
+                regoods(username,goodsid);//从goods的数据库中删除商品信息
+                $.ajax({
+                    type:"get",
+                    url:conf.url + "redybuy.php",
+                    data:{username:username,goodsid:goodsid,goodsnum:goodsnum}
+                })
+            }
+        }
+        //根据id的集合找到对应的商品的价格数量
+        function getinfor(idlist){
+            var objgoods = [];
+            for(var i=0;i<idlist.length;i++){
+                var id = idlist[i];
+                var num = $((".g_quantity"+id)).val();
+                var obj = {id:id,num:num};
+                objgoods.push(obj);
+            }
+            return objgoods;
+        }
+
+
+
+        //生成用户已发货订单信息
+        function createsenggds(goods){//goods ={user:"123344",id:"12",num:"3",intro:"lalalala",sprice:"18.00"}
+            var totle = goods.num*goods.sprice;
+            var str=`
+            <ul  class="goods clear">
+            <li><button id="`+goods.id+`">删除</button></li>
+            <li><img src="goodsimg/goods_list`+goods.id+`.jpg" alt=""></li>
+            <li><span>`+goods.intro+`</span></li>
+            <li><span>`+goods.num+`</span></li>
+            <li><span>￥`+goods.sprice+`</span></li>
+            <li><span>￥`+totle+`</span></li>
+            <li><p id="send`+goods.id+`">`+goods.statu+`</p></li>
+            </ul>`
+            $(".send").append(str);
+        }
+        //从发货数据库中获取数据
+        function getsendgoods(username){
+            $.ajax({
+                type:"get",
+                url:conf.url + "getsendgds.php",
+                data:{username:username},
+                success: function (result) {
+                    var list = JSON.parse(result);//[{goodsid:12,goodsnum:3},{goodsid:13,goodsnum:2}]
+                    for(var i=0;i<list.length;i++){
+                        var goodsid = list[i].goodsid;
+                        var goodsnum = list[i].goodsnum;
+                        sendgoodsinfo(username,goodsid,goodsnum,"已发货");
+                    }
+                }
+            })
+        }
+        function sendgoodsinfo(username, goodsid, goodsnum,statu){
+            $.ajax({
+                type: "get",
+                url: "json/goods.json",
+                success: function (result) {
+                    for (var i = 0; i < result.length; i++) {
+                        var goodsinfo = result[i];
+                        if (goodsid == goodsinfo.id) {
+                            sendgds.id = goodsid;
+                            sendgds.num = goodsnum;
+                            sendgds.intro = goodsinfo.brand;
+                            sendgds.sprice = goodsinfo.sprice;
+                            sendgds.user = username;
+                            sendgds.statu = statu;
+                            createsenggds(sendgds);
+                        }
+                    }
+                }
+            })
+        }
+        //从准备购买数据库中获取数据，显示未完成订单信息
+        function getgoods(username) {
+            $.ajax({
+                type: "get",
+                url: conf.url + "getredbuy.php",
+                data: {username: username},
+                async: false,
+                success: function (result) {
+                    var redybuylist = JSON.parse(result);
+                    for(var i=0;i<redybuylist.length;i++){
+                        var goodsid = redybuylist[i].goodsid;
+                        var goodsnum = redybuylist[i].goodsnum;
+                        sendgoodsinfo(username,goodsid,goodsnum,"未支付");
+                    }
+                }
+            });
+        }
+        $("body").on("click",".goods button", function () {
+            var id = $(this).attr("id");
+            var statuname = "#send"+id;
+            if($(statuname).html() == "未支付"){//删除redy数据库中的商品
+                $.ajax({
+                    type:"get",
+                    url:conf.url + "deltcarredygoods.php",
+                    data:{username:username,goodsid:id}
+                })
+            }else{//删除已发货中商品
+                $.ajax({
+                    type:"get",
+                    url:conf.url + "deltissend.php",
+                    data:{username:username,goodsid:id}
+                })
+            }
+            var ul = $(this).parent().parent()[0];
+            $(ul).hide();
+        })
+
+
+
+
+
+        //推荐
+        var numid = Math.round(Math.random()*6);
+        for(var i=1;i<6;i++){
+            tuijian(i+numid);
+        }
+        //左右切换
+        $(".recommend_good").hover(function () {
+            $("#pre").show();
+            $("#next").show();
+        },function () {
+            $("#pre").hide();
+            $("#next").hide();
+        })
+        $("#pre").click(function(){
+            $(".goods_list").empty();
+            numid=numid-5;
+            if(numid <= 0){
+                numid = 30;
+            }
+            for(var i=1;i<6;i++){
+                tuijian(i+numid);
+            }
+        });
+        $("#next").click(function () {
+            $(".goods_list").empty();
+            numid=numid+5;
+            if(numid >= 30){
+                numid = 0;
+            }
+            for(var i=1;i<6;i++){
+                tuijian(i+numid);
+            }
+        })
+        //从json中获取商品数据并生成商品列表
+        function tuijian(numid){
+            $.ajax({
+                type: "get",
+                url: "json/goods.json",
+                success: function (result) {
+                    for(var i=0;i<result.length;i++){
+                        var goods = result[i];
+                        if(numid == goods.id){
+                           var str = `
+                            <dl>
+                                <a href="goodsinfo.html?id=`+goods.id+`" target="_blank">
+                                    <dt>
+                                        <img class="lazy" src="goodsimg/goods_list`+goods.id+`.jpg" alt="">
+                                    </dt>
+                                    <dd>
+                                        <p class="goods_introduce">`+goods.introduce+`</p>
+                                        <p class="goods_price"><span class="special_price">¥`+goods.sprice+`</span></p>
+                                    </dd>
+                                </a>
+                            </dl>`
+                            $(".goods_list").append(str);
+                        }
+                    }
+                }
+            });
+        }
+
+
+    })
+</script>
+</html>

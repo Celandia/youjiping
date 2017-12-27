@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>支付页面</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pay.css">
+</head>
+<body>
+<!--头部开始-->
+<div class="header_container">
+    <div class="header_main clear">
+        <!--logo-->
+        <div class="logo">
+            <a href="#" target="_blank"><img src="img/logo.png" alt=""></a>
+        </div>
+        <!--头部右边-->
+        <div class="functional">
+            <div class="search_box clear">
+                <p>
+                    <input type="text" id="search" placeholder="搜索">
+                    <span id="search_btn"><img src="img/search.png" alt=""></span>
+                </p>
+            </div>
+            <div class="use_functional clear">
+                <ul class="clear">
+                    <li class="download_app">
+                        <a href="#" title="下载APP"></a>
+                        <div><img src="img/app_code.png" alt=""><span></span></div>
+                    </li>
+                    <li class="shopping_bag">
+                        <a href='shoppingcar.html' target='_blank' title='购物袋'></a>
+                    </li>
+                    <li class="user_center">
+                        <!--<a href="login.html" title="个人中心"></a>-->
+                        <!--<a href="#" class="overlogin"></a>-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部菜单-->
+<div class="nav_bar_container">
+    <div class="nav_bar clear" id="nav_bar">
+        <ul class="clear">
+            <li class="brand">
+                <a class="no" href="index.html">首页</a>
+                <p></p>
+            </li>
+            <li class="brand">
+                <a href="#" target="_blank">新品</a>
+                <p></p>
+            </li>
+            <li>
+                <a href="#" target="_blank">美味餐厨</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">烹饪锅具</a></li>
+                    <li><a href="#" target="_blank">厨房工具</a></li>
+                    <li><a href="#" target="_blank">厨房电器</a></li>
+                    <li><a href="#" target="_blank">餐具桌面</a></li>
+                    <li><a href="#" target="_blank">水具酒具</a></li>
+                    <li><a href="#" target="_blank">咖啡茶具</a></li>
+                    <li><a href="#" target="_blank">烘焙烧烤</a></li>
+                    <li><a href="#" target="_blank">吃货专列</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#" target="_blank">家纺家饰</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">家纺</a></li>
+                    <li><a href="#" target="_blank">装饰</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#" target="_blank">生活日用</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">清洁</a></li>
+                    <li><a href="#" target="_blank">收纳</a></li>
+                    <li><a href="#" target="_blank">雨具</a></li>
+                    <li><a href="#" target="_blank">浴室</a></li>
+                    <li><a href="#" target="_blank">生活电器</a></li>
+                    <li><a href="#" target="_blank">颈枕口罩</a></li>
+                    <li><a href="#" target="_blank">宠物用品</a></li>
+                    <li><a href="#" target="_blank">保暖防护</a></li>
+                    <li><a href="#" target="_blank">旅游外出</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#" target="_blank">健康美体</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">口腔护理</a></li>
+                    <li><a href="#" target="_blank">面部护理</a></li>
+                    <li><a href="#" target="_blank">全身护理</a></li>
+                    <li><a href="#" target="_blank">头发护理</a></li>
+                    <li><a href="#" target="_blank">女性护理</a></li>
+                    <li><a href="#" target="_blank">纤体塑身</a></li>
+                    <li><a href="#" target="_blank">膳食补充</a></li>
+                    <li><a href="#" target="_blank">美容彩妆</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#" target="_blank">文具数码</a>
+                <p></p>
+                <ol>
+                    <li><a href="#" target="_blank">笔记手帐</a></li>
+                    <li><a href="#" target="_blank">书写工具</a></li>
+                    <li><a href="#" target="_blank">办公收纳</a></li>
+                    <li><a href="#" target="_blank">贺卡包装</a></li>
+                    <li><a href="#" target="_blank">数码配件</a></li>
+                    <li><a href="#" target="_blank">耳机/音箱</a></li>
+                    <li><a href="#" target="_blank">摄影相关</a></li>
+                </ol>
+            </li>
+            <li class="brand">
+                <a href="#" target="_blank">品牌</a>
+                <p></p>
+            </li>
+        </ul>
+        <a href="#" class="contact">联系客服</a>
+
+        <div class="nav_bar_cont" id="nav_bar_cont"></div>
+        <p></p>
+        <!--<a href="#" class="scroll_shop" id="scroll_shop" target="_blank"></a>-->
+        <a href='shoppingcar.html' class='scroll_shop no' id='scroll_shop' target='_blank' title='购物袋'></a>
+    </div>
+</div>
+<!--头部结束-->
+<div class="bread">
+    <div class="bread_container">
+        <a href="index.html">首页</a>
+        <i>→</i>
+        <a href="shoppingcar.html" class="car">购物车</a>
+        <i>→</i>
+        <a href="#">支付</a>
+    </div>
+</div>
+
+<!--------------------------------支付开始----------------------------->
+<div class="order">
+    <div class="orders_tip">
+        <p>填写订单</p>
+    </div>
+    <!---------地址信息开始--------->
+    <p class="infor">
+        收件人信息
+    </p>
+    <div class="form">
+        <div class="addresss_form clear">
+            <ul class="address_consignee">
+                <li class="address_label nol" style="letter-spacing: 0px;"><em>*</em>收货人姓名：</li>
+                <li><input type="text" name="consignee" id="consignee"></li>
+            </ul>
+            <ul class="address_contact">
+                <li class="address_label"><em>*</em>联系电话：</li>
+                <li><input type="text" id="phone"></li>
+            </ul>
+            <ul class="address_area">
+                <li class="address_label"><em>*</em>所在省市：</li>
+                <li class="sel">
+                    <select name="" id="province">
+                        <option>请选择省份</option>
+                        <option>湖北</option>
+                        <option>湖南</option>
+                        <option>河南</option>
+                    </select>
+                </li>
+                <li class="sel">
+                    <select name="" id="city">
+                        <option>请选择城市</option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="address_details">
+                <li class="address_label"><em>*</em>详细地址：</li>
+                <li><p><textarea id="address_details" type="textarea"></textarea></p></li>
+            </ul>
+            <div class="save">
+                <p class="submit_address" id="submit_address">保存地址</p>
+            </div>
+        </div>
+    </div>
+    <!---------地址信息结束--------->
+
+    <!----------订单信息开始------------->
+    <!--<div class="item_title">-->
+    <!--<b class="msg">商品信息</b><b class="property">属性</b><b class="price">单价</b><b class="num">数量</b><b-->
+    <!--class="tol">小计</b>-->
+    <!--</div>-->
+    <!--<div class="order_list">-->
+    <!--<ul>-->
+    <!--<li class="msg">-->
+    <!--<dl>-->
+    <!--<dt><img class="lazy" src="goodsimg/goods_list3.jpg" alt=""></dt>-->
+    <!--<dd>-->
+    <!--<p>创意棉麻挂式收纳袋 8兜</p>-->
+    <!--</dd>-->
+    <!--</dl>-->
+    <!--</li>-->
+    <!--<li class="propety"><span>8兜巴黎风情</span><span>均码</span></li>-->
+    <!--<li class="price">¥49.00</li>-->
+    <!--<li class="num">1</li>-->
+    <!--<li class="tol">¥49.00</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--<div class="addresss">-->
+    <!--<span class="tip">收货人姓名：</span><em class="name">lili</em>-->
+    <!--<span class="tip">联系电话：</span><em class="tel">17612772510</em>-->
+    <!--<span class="tip">详细地址：</span><em class="addre">lili</em>-->
+    <!--</div>-->
+    <!--<div class="submit_btn">-->
+    <!--<p>确定支付</p>-->
+    <!--</div>-->
+    <!----------订单信息结束------------->
+</div>
+<!----------------------------------支付结束-------------------------------->
+
+<!--foot开始-->
+<div class="footer_container">
+    <div class="footer_main">
+        <ul class="footer_help">
+            <li><a href="#" class="about_ujp">关于优集品</a></li>
+            <li><a href="#" class="shopping_guide">购物指南</a></li>
+            <li><a href="#" class="notification">消费者告知书</a></li>
+            <li><a href="#" class="common_problem">常见问题</a></li>
+        </ul>
+        <div class="website_information">
+            <p>
+                <span class="first">客服电话 4000-788-738</span>
+                <span>优集品© 2011-2016</span>
+                <span>北京优集品网络科技有限公司</span>
+                <span>京ICP备11028595号 </span>
+                <span class="last">京公网安备110105011117</span>
+            </p>
+            <p style="margin-top: 10px;">
+                <span class="first">公司地址：北京市朝阳区华腾世纪总部公园E2座6层601B</span>
+                <span>统一社会信用代码：91110105576857306R </span>
+                <span class="last">食品经营许可证编码：</span>
+            </p>
+            <dl class="clear">
+                <dt>关注优集品</dt>
+                <dd class="weichat">
+                    <div id="weichat_div"><img src="img/wechat_code.png" alt=""><span></span></div>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<!--foot结束-->
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/cy_head.js"></script>
+<script src="js/config.js"></script>
+<script>
+    $(function () {
+        //head的效果
+        nav();
+        //返回购物车
+//        var username = window.location.search.split("=")[1];
+//        $(".car").attr("href", "shoppingcar.html?username=" + username);
+
+        //省市联动
+        $.ajax({
+            type: "get",
+            url: "json/city.json",
+            success: function (result) {
+                $("#province").change(function () {
+                    var province = $(this).val();
+                    for (var i = 0; i < result.length; i++) {
+                        var pro = result[i].province;
+                        if (province == pro) {
+                            var citylist = result[i].city;
+                            $("#city").empty();
+                            for (var j = 0; j < citylist.length; j++) {
+                                $("#city").append("<option>" + citylist[j] + "</option>")
+                            }
+                        }
+                    }
+                })
+            }
+        });
+
+        //声明一个对象，根据对象自动生成订单
+        var usergoodslist = [];
+        var usergoods = {};//var usergoods ={id:"12",num:"3",intro:"lalalala",sprice:"18.00",user:"lili",tel:"17612772510",addre:"啦啦啦啦啦"}
+
+        //提交地址信息
+        function isblank(value) {
+            if (value.length == 0) {
+                $("#submit_address").html("请完善信息");
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        $("#submit_address").click(function () {
+            var user = $("#consignee").val();
+            var tel = $("#phone").val();
+            var addre = $("#province").val() + $("#city").val() + $("#address_details").val();
+            usergoods.user = user;
+            usergoods.tel = tel;
+            usergoods.addre = addre;
+            if (isblank(user) && isblank(tel) && isblank(addre)) {
+                $(".infor").remove();
+                $(".form").remove();
+                creat(usergoods);
+                getgoods();
+
+            }
+        });
+
+
+        //从数据库中获取准备商品的信息
+
+        function getgoods() {
+            $.ajax({
+                type: "get",
+                url: conf.url + "getredbuy.php",
+                data: {username: username},
+                async: false,
+                success: function (result) {
+                    var list = JSON.parse(result);//[{goodsid:12,goodsnum:3},{goodsid:13,goodsnum:2}]
+                    usergoodslist = list;
+                    for (var i = 0; i < list.length; i++) {
+                        var goodsid = list[i].goodsid;
+                        var goodsnum = list[i].goodsnum;
+                        getgoodsinfo(goodsid, goodsnum);
+                    }
+                }
+            })
+        }
+
+        //从json中获取相应商品的数据
+        function getgoodsinfo(goodsid, goodsnum) {
+            $.ajax({
+                type: "get",
+                url: "json/goods.json",
+                async: false,
+                success: function (result) {
+                    for (var i = 0; i < result.length; i++) {
+                        var goodsinfo = result[i];
+                        if (goodsid == goodsinfo.id) {
+                            usergoods.id = goodsid;
+                            usergoods.num = goodsnum;
+                            usergoods.intro = goodsinfo.introduce;
+                            usergoods.sprice = goodsinfo.sprice;
+                            createorder(usergoods);
+                        }
+                    }
+                }
+            })
+        }
+
+        //自动生成订单var usergoods ={id:"12",num:"3",intro:"lalalala",sprice:"18.00",user:"lili",tel:"17612772510",addre:"啦啦啦啦啦"}
+        function createorder(usergoods) {
+            var tol = usergoods.sprice * usergoods.num;
+            var str = `
+        <ul>
+            <li class="msg">
+                <dl>
+                    <dt><img class="lazy" src="goodsimg/goods_list` + usergoods.id + `.jpg" alt=""></dt>
+                    <dd>
+                        <p>` + usergoods.intro + `</p>
+                    </dd>
+                </dl>
+            </li>
+            <li class="propety"><span>` + usergoods.intro + `</span></li>
+            <li class="price">¥` + usergoods.sprice + `</li>
+            <li class="num">` + usergoods.num + `</li>
+            <li class="tol">¥` + tol + `</li>
+        </ul>
+    `
+            $(".order_list").append(str);
+        }
+
+        function creat(usergoods) {
+            var ord = `
+             <div class="item_title">
+        <b class="msg">商品信息</b><b class="property">属性</b><b class="price">单价</b><b class="num">数量</b><b
+            class="tol">小计</b>
+    </div>
+    <div class="order_list"></div>
+            <div class="addresss">
+        <span class="tip">收货人姓名：</span><em class="name">` + usergoods.user + `</em>
+        <span class="tip">联系电话：</span><em class="tel">` + usergoods.tel + `</em>
+        <span class="tip">详细地址：</span><em class="addre">` + usergoods.addre + `</em>
+    </div>
+    <div class="submit_btn">
+        <p class="pay_p">确定支付</p>
+    </div>`
+            $(".order").append(ord);
+        }
+
+        $('body').on('click', '.pay_p', function () {
+            alert("支付成功");
+            savedata(username);
+            regoods(username);
+            window.location.href = "index.html";
+        });
+        function savedata(username) {//将redybuy的商品存入buy中
+            for (var i=0;i<usergoodslist.length; i++) {
+                var goods = usergoodslist[i];
+                var goodsid = goods.goodsid;
+                var goodsnum = goods.goodsnum;
+                $.ajax({
+                    type: "get",
+                    url: conf.url + "buygoods.php",
+                    data: {username: username, goodsid: goodsid, goodsnum: goodsnum}
+                });
+            }
+        }
+
+        function regoods(username) {//将redybuy中商品删除
+            $.ajax({
+                type: "get",
+                url: conf.url + "deltredybuy.php",
+                data: {username: username}
+            });
+        }
+
+
+    })
+
+</script>
+</html>

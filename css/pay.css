@@ -1,0 +1,235 @@
+.orders_tip{
+    width: 1150px;
+    margin: 0 auto;
+    color: #4A4A4A;
+    margin-bottom: 30px;
+}
+.orders_tip p{
+    font-size: 20px;
+}
+.infor{
+    width: 1150px;
+    height: 42px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 42px;
+    background: #F8F8F8;
+    text-indent: 12px;
+    margin-bottom: 10px;
+}
+.form{
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px #CCC;
+    padding-top: 10px;
+}
+.addresss_form{
+    width: 426px;
+    height: 240px;
+    margin: 10px auto;
+}
+
+.addresss_form ul{
+    overflow: hidden;
+    height: 30px;
+    font-size: 14px;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+    padding-left: 12px;
+}
+.addresss_form ul li{
+    float: left;
+    line-height: 30px;
+}
+li.address_label {
+    width: 104px;
+    text-align: right;
+    letter-spacing: 3px;
+}
+li.address_label em {
+    color: #C0392D;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+input[type=text] {
+    width: 276px;
+}
+.addresss_form input[type=text] {
+    height: 30px;
+    background: #F8F8F8;
+    border: 0px;
+    text-indent: 6px;
+    outline: 0px;
+    border-radius: 3px;
+}
+textarea {
+    height: 64px;
+    width: 265px;
+    line-height: 20px;
+    display: inline-block;
+    outline: none;
+    border: none;
+    background: #F8F8F8;
+    padding-left: 10px;
+    padding-top: 4px;
+    resize: none;
+}
+.address_area .sel{
+    margin-right: 10px;
+}
+.save{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+.submit_address {
+    display: inline-block;
+    width: 130px;
+    height: 36px;
+    background: #e74c3c;
+    text-align: center;
+    line-height: 36px;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/******订单信息样式******/
+.item_title{
+    width: 1150px;
+    margin: 10px auto;
+    height: 42px;
+    background: #F8F8F8;
+    line-height: 42px;
+}
+.item_title b{
+    display: inline-block;
+}
+.item_title  .msg{
+    width: 244px;
+    text-align: right;
+}
+.item_title  .property{
+    width:300px;
+    text-align: right;
+}
+.item_title  .price{
+    width: 175px;
+    text-align: right;
+}
+.item_title  .num{
+    width: 175px;
+    text-align: right;
+}
+.item_title  .tol{
+    width: 175px;
+    text-align: right;
+}
+
+
+
+.order_list{
+    width: 1150px;
+    margin: 0 auto;
+    border-top: 1px dashed #4A4A4A;
+}
+
+.order_list ul{
+    height: 130px;
+    border-bottom: 1px solid #F8F8F8;
+    overflow: hidden;
+    font-size: 13px;
+}
+.order_list ul li{
+    float: left;
+    color: #4A4A4A;
+    font-size: 13px;
+}
+.order_list ul li dl{
+    margin-left: 14px;
+    margin-top: 20px;
+}
+.order_list ul li dl dt{
+    width: 90px;
+    height: 90px;
+    margin-right: 25px;
+    float: left;
+}
+.order_list ul li dl dt img{
+    width: 100%;
+    height: 100%;
+}
+.order_list ul li dl dd{
+    float: left;
+    width:236px;
+    padding-top: 25px;
+    color: #4A4A4A;
+    line-height: 16px;
+    font-size: 14px;
+}
+.order_list ul li.msg{
+    width: 450px;
+}
+.order_list ul li.propety{
+    width: 168px;
+    text-align: center;
+    padding-top: 48px;
+}
+.order_list ul li.propety span{
+    margin-right: 18px;
+    display: block;
+    margin-bottom: 8px;
+}
+.order_list ul li.price{
+    padding-top: 56px;
+    width: 124px;
+    text-align: right;
+}
+.order_list ul li.num{
+    width: 150px;
+    padding-top: 56px;
+    text-align: right;
+
+}
+.order_list ul li.tol{
+    width: 192px;
+    padding-top: 56px;
+    text-align: right;
+}
+.addresss{
+    width: 1150px;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+}
+.addresss span{
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5px;
+}
+.addresss em{
+    font-size: 14px;
+    color: #666666;
+    display: inline-block;
+    margin-right: 10px;
+}
+.submit_btn{
+    width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+}
+.submit_btn p{
+    display: inline-block;
+    width: 272px;
+    height: 52px;
+    background: #e74c3c;
+    text-align: center;
+    line-height: 52px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+.submit_btn p:hover{
+    background: #CE4B39;
+}

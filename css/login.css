@@ -1,0 +1,128 @@
+.login_con{
+    width: 990px;
+    height: auto;
+    margin: 0 auto;
+}
+.login_con .download_app{
+    float: left;
+    width: 460px;
+    height: 360px;
+}
+.login_con .download_app img{
+    width: 100%;
+    height: 100%;
+}
+
+/*右边注册表单*/
+.login_label {
+    float: right;
+    width: 292px;
+    color: #4A4A4A;
+    font-size: 18px;
+    margin-right: 32px;
+    margin-top: 70px;
+}
+.login_label p {
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+}
+.login_label p #pwd_span{
+    display: block;
+    color: #9B9B9B;
+}
+.login_label p span {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-left: 6px;
+    display: none;
+}
+.login_label input[type=text], .login_label input[type=password] {
+    width: 260px;
+    height: 34px;
+    border: 1px solid #BEBDBB;
+    line-height: 34px;
+    border-radius: 3px;
+    margin-bottom: 13px;
+    font-size: 13px;
+    background: #ffffff;
+    text-indent: 6px;
+}
+.login_label>div>span {
+    float: right;
+    display: inline;
+    width: 22px;
+    height: 22px;
+    background: url(../img/icon_bg.png) no-repeat;
+    background-position: -214px 0px;
+    margin-top: 10px;
+    background-size: auto 200px;
+    display: none;
+}
+.login_label div.image_verify_code input,.login_label div.phone_verify_code input{
+    width: 160px;
+    height: 34px;
+}
+.login_label div.image_verify_code img {
+    width: 90px;
+    height: 34px;
+    display: inline-block;
+    border-radius: 3px;
+    position: relative;
+}
+.login_label div.phone_verify_code b{
+    width: 90px;
+    height: 34px;
+    font-size: 13px;
+    color: #e74c3c;
+    font-weight: normal;
+    line-height: 34px;
+    border: 1px solid #e74c3c;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    display: inline-block;
+}
+.login_label p.log_submit{
+    height: 36px;
+}
+.login_label p.log_submit a{
+    width: 260px;
+    height: 36px;
+    background: #e74c3c;
+    text-align: center;
+    line-height: 36px;
+    color: white;
+    margin-left: 0px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+}
+p.registration_protocol {
+    font-size: 12px;
+    color: #BEBDBB;
+    text-align: center;
+    width: 268px;
+    margin-top: 18px;
+}
+p.registration_protocol a{
+    font-size: 12px;
+    cursor: pointer;
+    color: #BEBDBB;
+}
+.go_login {
+    font-weight: normal;
+    height: 18px;
+    font-size: 13px;
+    width: 260px;
+    margin-top: 24px;
+    text-align: center;
+}
+.go_login img {
+    height: 14px;
+    width: 14px;
+    margin-left: 9px;
+    margin-bottom: 1px;
+}
+
